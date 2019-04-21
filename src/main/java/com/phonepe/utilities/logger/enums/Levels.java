@@ -1,13 +1,11 @@
 package com.phonepe.utilities.logger.enums;
 
 public enum Levels {
-    TRACE("TRACE", 1000),
     DEBUG("DEBUG", 900),
     INFO("INFO", 800),
     WARN("WARN", 700),
     ERROR("ERROR", 600),
-    FATAL("FATAL", 500),
-    OFF("OFF", 400);
+    FATAL("FATAL", 500);
 
     private final String name;
     private final Integer level;

@@ -22,7 +22,7 @@ public class LogManager {
         sinkLoaderFactory = new SinkLoaderFactory();
     }
 
-    public synchronized static LogManager getInstance() throws IllegalAccessException, ClassNotFoundException, InstantiationException {
+    public synchronized static LogManager getInstance() {
         if (INSTANCE == null)
             INSTANCE = new LogManager();
         return INSTANCE;
@@ -30,10 +30,6 @@ public class LogManager {
 
     public void INFO(String msg) {
         writeLogs(msg, "INFO");
-    }
-
-    public void TRACE(String msg) {
-        writeLogs(msg, "TRACE");
     }
 
     public void DEBUG(String msg) {
