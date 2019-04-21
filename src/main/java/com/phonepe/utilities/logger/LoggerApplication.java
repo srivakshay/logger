@@ -9,13 +9,11 @@ public class LoggerApplication {
 
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, ClassNotFoundException {
 
-
-        LogManager.getInstance();
         testMethod();
     }
 
-   public static void testMethod() throws IllegalAccessException, InstantiationException, ClassNotFoundException {
-        LogManager logManager= LogManager.getInstance();
+    public static void testMethod() throws IllegalAccessException, InstantiationException, ClassNotFoundException {
+        LogManager logManager = LogManager.getInstance();
         logManager.INFO("Info logging from test method");
-   }
+    }
 }
