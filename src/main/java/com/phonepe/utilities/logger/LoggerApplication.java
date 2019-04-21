@@ -16,6 +16,6 @@ public class LoggerApplication {
 
    public static void testMethod() throws IllegalAccessException, InstantiationException, ClassNotFoundException {
         LogManager logManager= LogManager.getInstance();
-        logManager.INFO("Sample");
+        logManager.INFO("Info logging from test method");
    }
 }
